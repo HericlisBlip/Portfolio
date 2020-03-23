@@ -1,9 +1,3 @@
-alert("Olá Mundo!")
-class Teste {
-    metodo () {
+import { soma } from './funcoes';
 
-    }
-    outro(){
-        
-    }
-}
+console.log(soma(1, 2));
