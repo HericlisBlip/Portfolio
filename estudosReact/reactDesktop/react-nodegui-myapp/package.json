@@ -1,0 +1,22 @@
+{
+  "name": "react-nodegui-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist / index.js",
+  "scripts": {
+    " start ": " tsc && qode dist / index.js "
+  },
+  " author ": " ",
+  " license ": " ISC ",
+  " dependencies ": {
+    " @ nodegui / nodegui ": " ^ 0.19.0 ",
+    " @ nodegui / react-nodegui ": " ^ 0.6.1 ",
+    " react ": " ^ 16.9.0 "
+  },
+  " devDependencies ": {
+    "@ tipos / nó ": "^ 13.13.5",
+    " @ tipos / reagir ": "^ 16.9.2",
+    " @ tipos / reagem-reconciliador ": "^ 0.18.0",
+    "typescript": " ^ 3,5 .3 "
+  }
+}
