@@ -1,0 +1,10 @@
+ .corpo  {
+    margin: 0px ;
+    padding: 0px;
+}
+.head {
+    background-color: red;
+}
+ ul li {
+     display: inline;
+ }
