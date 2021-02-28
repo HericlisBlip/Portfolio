@@ -1,8 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Head from 'next/head'
 export default function PrimeiroPost(){
     return (
     <>
+    <Head>
+        <title>Meu Primeiro Post</title>
+    </Head>
     <h1>Primeiro Post</h1>
         
         
