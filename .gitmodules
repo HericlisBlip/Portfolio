@@ -1,3 +1,6 @@
 [submodule "estudosReact/nodegui-starter"]
 	path = estudosReact/nodegui-starter
 	url = https://github.com/nodegui/nodegui-starter.git
+[submodule "estudosReact/reactDesktop/nodegui-starter"]
+	path = estudosReact/reactDesktop/nodegui-starter
+	url = https://github.com/nodegui/nodegui-starter.git
