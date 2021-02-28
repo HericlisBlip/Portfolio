@@ -11,22 +11,23 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Read{' '}
-          <Link href="/posts/primeiro-post">
-            <a>this page</a>
-          </Link>
-          
-          </h1>
+          Aprendendo <a href="https://nextjs.org">Next.js!</a>
+        </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Começando a edição de páginas pelo arquivo <code>pages/index.js</code>
         </p>
 
         <div className="grid">
-          <a href="./posts/primeiro-post.js" className="card">
-            <h3>Link Primeira Página &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          {' '}
+          <Link href="/posts/primeiro-post">
+          <a className="card">
+            <h3> Link do primeiro Post &rarr;</h3>
+            <p>
+              <a>Essa é a pagina de teste para o primeiro Link.</a>
+            </p>
           </a>
+          </Link>
 
           <a href="https://nextjs.org/learn" className="card">
             <h3>Learn &rarr;</h3>
