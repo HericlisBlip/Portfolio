@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
-import Layout from '../../componentes/layout'
+import styles from '../../componentes/alert.module.css'
+import cn from 'classnames'
 export default function PrimeiroPost(){
     return (
-    <Layout>
+    <>
     <Head>  
         <title>Meu Primeiro Post</title>
     </Head>
@@ -18,7 +19,7 @@ export default function PrimeiroPost(){
         alt="Meu Char No Mu Online"    
     ></Image>  
     <Image
-        src="/imagens/selfSantander.jpg"
+        src="/imagens/FotoProfissional.png"
         height={144}
         width={144}
         alt="Minha Foto de Perfil"    
@@ -26,9 +27,8 @@ export default function PrimeiroPost(){
         <h2>
             <Link href="/"><a>Voltar Para Página Index</a></Link>
         </h2>
-
-        
-    </Layout> 
+</>
+   
         )
 
 }

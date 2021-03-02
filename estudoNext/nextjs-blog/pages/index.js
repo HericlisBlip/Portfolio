@@ -29,10 +29,25 @@ export default function Home() {
           </a>
           </Link>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          {' '}
+          <Link href="/posts/perfil">
+          <a className="card">
+            <h3> Perfil do Desenvolvedor &rarr;</h3>
+            <p>
+              <a>Essa é a pagina para destacar habilidades técnicas.</a>
+            </p>
           </a>
+          </Link>
+
+          {' '}
+          <Link href="/posts/primeiro-post">
+          <a className="card">
+            <h3> Link do primeiro Post &rarr;</h3>
+            <p>
+              <a>Essa é a pagina de teste para o primeiro Link.</a>
+            </p>
+          </a>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
@@ -41,6 +56,16 @@ export default function Home() {
             <h3>Examples &rarr;</h3>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
+
+          {' '}
+          <Link href="/posts/primeiro-post">
+          <a className="card">
+            <h3> Link do primeiro Post &rarr;</h3>
+            <p>
+              <a>Essa é a pagina de teste para o primeiro Link.</a>
+            </p>
+          </a>
+          </Link>
 
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
