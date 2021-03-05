@@ -1,9 +1,37 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { getSortedPostsData } from '../lib/posts'
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+export default function Home({allPostsData}) {
   return (
+ 
     <div className="container">
+      {/* Keep the existing code here */}
+
+      {/* Add this <section> tag below the existing <section> tag */}
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
+        </ul>
+      </section>
+  
       <Head>
         <title>Criando Minha Primeira Aplicação NextJs</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,16 +48,6 @@ export default function Home() {
 
         <div className="grid">
           {' '}
-          <Link href="/posts/primeiro-post">
-          <a className="card">
-            <h3> Link do primeiro Post &rarr;</h3>
-            <p>
-              <a>Essa é a pagina de teste para o primeiro Link.</a>
-            </p>
-          </a>
-          </Link>
-
-          {' '}
           <Link href="/posts/perfil">
           <a className="card">
             <h3> Perfil do Desenvolvedor &rarr;</h3>
@@ -43,6 +61,17 @@ export default function Home() {
           <Link href="/posts/primeiro-post">
           <a className="card">
             <h3> Link do primeiro Post &rarr;</h3>
+            <p>
+              <a>Essa é a pagina de teste para o primeiro Link.</a>
+            </p>
+          </a>
+          </Link>
+
+
+          {' '}
+          <Link href="/blog-index">
+          <a className="card">
+            <h3> Blog Pessoal &rarr;</h3>
             <p>
               <a>Essa é a pagina de teste para o primeiro Link.</a>
             </p>
@@ -86,8 +115,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+          </a>
       </footer>
 
       <style jsx>{`

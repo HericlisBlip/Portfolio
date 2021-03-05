@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../../componentes/alert.module.css'
 import cn from 'classnames'
-export default function PrimeiroPost(){
+export default function PrimeiroPost({children, type}){
     return (
     <>
     <Head>  
@@ -24,9 +24,13 @@ export default function PrimeiroPost(){
         width={144}
         alt="Minha Foto de Perfil"    
     ></Image>    
-        <h2>
-            <Link href="/"><a>Voltar Para Página Index</a></Link>
-        </h2>
+        <Link href="/">
+          <h3> Link para voltar a index &rarr;</h3>
+          </Link>
+    <div className={ cn({ [styles.success]: type === 'success', [styles.error]: type === 'error'})}
+    >
+      {children}
+    </div>
 </>
    
         )
