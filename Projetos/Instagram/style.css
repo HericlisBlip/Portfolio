@@ -1,3 +1,5 @@
+
+
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
 }
-.insta-wrapper{
+.instagram-wrapper{
     display: flex;
     align-items: center;
     justify-content: start;
@@ -23,18 +25,18 @@ body {
     height: 100vh;
 
 }
-.insta-phone{
+.instagram-phone{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 
 }
-.insta-phone img {
+.instagram-phone img {
     height: 50rem;
 }
 
-.insta-continue {
+.instagram-continue {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -49,7 +51,7 @@ body {
     flex-direction: column;
     background-color: #ffffff;
     width: 100%;
-    padding:  1.3rm 0;
+    padding: 1.3rem 0;
     border:  1px solid lightgray;
 }
 
@@ -58,7 +60,7 @@ body {
 
 
 }
-.instagrem-logo {
+.instagram-logo {
     height: 3rem;
 }
 .profile-photo {
@@ -71,15 +73,16 @@ body {
 
 .profile-photo img {
     height: 6rem;
+    width:7rem;
 }
-.insta-login {
+.instagram-login {
     background-color: #0095f6;
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
 
 }
-.insta-logout {
+.instagram-logout {
     color: #0095f6;
     margin-top:1rem ;
 }
@@ -109,9 +112,41 @@ body {
 .app-download {
     height: 3rem;
     height: 10rem;
-    background-color: cover;
+    background-size: cover;
 
 }
-.app-download:nth-child(1){
-    background-image: url(./img/apple-button.png);
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
 }
