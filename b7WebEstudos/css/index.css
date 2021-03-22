@@ -1,10 +1,29 @@
- .corpo  {
-    margin: 0px ;
-    padding: 0px;
+* {
+    margin-top: auto;
 }
-.head {
+body  {
+    margin: 0 ;
+    padding: 0 ;
+}
+.header {
+    padding: 4vh 5vw  4vh vw ;
+    width: 100vw;
+    height: 15vh;
+    
     background-color: red;
 }
+.nav {
+    border:solid green;
+    border-radius: 25%;
+    display: inline-flex;
+}
+
  ul li {
      display: inline;
  }
+
+.footer{
+    position: relative;
+    background-color: green;
+    margin-top: 33vh;
+}
